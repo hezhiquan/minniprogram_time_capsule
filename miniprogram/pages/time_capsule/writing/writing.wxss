@@ -1,0 +1,56 @@
+/* miniprogram/pages/time_capsule/writing/writing.wxss */
+
+page{
+  background-color: rgb(218, 216, 210);
+}
+
+textarea {
+  margin-top: 100rpx;
+  background-color: rgb(218, 216, 210);  
+  line-height:150%;
+}
+
+.buttonview{
+  position: absolute;
+  top: 1rpx;
+  right:10rpx;
+  height: 120rpx;
+  width:120rpx;
+}
+
+.iconview {
+  position: relative;
+  width: 100%;
+  height: 10%;
+  background-color:pink;
+}
+
+.icon {
+
+  width: 80rpx;
+  height: 80rpx;
+  margin-right: 10%;
+}
+ button {
+  background: transparent;
+  height:120rpx;
+  margin-top: -30rpx;
+}
+.zhifeiji{
+  position: absolute;
+  margin-top: 1rpx;
+  width: 120rpx;
+  height: 120rpx;
+
+}
+
+/* .OK-icon{
+  position: absolute;
+  width: 5%;
+  height: 5%;
+  right: 5%;
+  top: 10rpx;
+  z-index: 1;
+
+
+} */

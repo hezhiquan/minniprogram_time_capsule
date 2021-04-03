@@ -1,0 +1,14 @@
+<!--这里是写信的界面，布局很简单，只有一个textarea和一个发送的button-->
+<view class="bg">
+	<view class="buttonview">
+		<!--点击发送后，会调用finished函数，回到设定的界面，并将一些数据传回去-->
+			<image bindtap="finished" src="../../../images/timeCapsule/wanchengfa.png" class="zhifeiji"> </image>
+	</view>
+	<view>
+		<view><!--getTextareaData函数会获取text area中的信件的内容-->
+			<textarea maxlength="50000" style="border:0;border-radius:5px;width: 355px;height:700px;padding: 10px;resize: none;" placeholder="写一封给未来的信吧~" bindinput="getTextareaData"> </textarea>
+		</view>
+	</view>
+
+
+</view>

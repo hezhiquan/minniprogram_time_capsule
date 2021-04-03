@@ -1,0 +1,114 @@
+/* miniprogram/pages/time_capsule/capsule.wxss */
+.box{
+  width: 100%;
+ 
+}
+.title{
+  /* margin-left: 70rpx; */
+  margin-top: 30rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:#013950;
+  background-color: #d1ac80;
+  border-radius: 25rpx;
+  height: 70rpx;
+}
+.bg{
+  /* background-color: #e8e3dd; */
+  position: absolute;
+/*   left: 15rpx; */
+  width: 100%;
+  height: 100%;
+  background-color: #dcc;
+  background-image:url('https://s1.ax1x.com/2020/06/09/t43B7V.png');
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  z-index: -1;
+}
+.pen-image{
+  position: absolute;
+  width: 100rpx;
+  height: 100rpx;
+  right: 70rpx;
+  bottom: 120rpx;
+  z-index: 1;
+  border-radius: 50%;
+  box-shadow: 10rpx 10rpx 10rpx #888888;
+}
+.setting-image{
+  position: absolute;
+  width: 100rpx;
+  height: 100rpx;
+  right: 70rpx;
+  bottom: 120rpx;
+  z-index: 1;
+  border-radius: 50%;
+  box-shadow: 10rpx 10rpx 10rpx #888888;
+}
+.text1{
+  position:absolute;
+  bottom: 75rpx;
+  right:86rpx;
+  margin-top: 100rpx;
+}
+.text2{
+  position:absolute;
+  bottom: 75rpx;
+  right: 87rpx;
+  margin-top: 100rpx;
+}
+.settingTime{
+  position:absolute;
+  width:100%;
+  height: 100%;
+ /*  align-items: center; */
+/*   justify-content: center; */
+  background-image: linear-gradient(to top,#d1ac80 0%, rgb(242, 224, 186) 100%);
+  z-index: 2;
+ 
+}
+/* .inputEmail{
+  color: aliceblue;
+  border:0;
+  border-radius:5px;
+  background-color:rgba(241,241,241,.98);
+  width: 355px;
+  height:700rpx;
+  padding: 10px;
+  resize: none;
+} */
+.placeholder-imput{
+  /* color: rgb(177, 170, 156); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pickerview{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.left{
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  writing-mode: vertical-lr;
+  letter-spacing: 4px;
+}
+.right{
+  position: absolute;
+  top: 30%;
+  right: 5%;
+  writing-mode: vertical-lr;
+  letter-spacing: 4px;
+}
+.emailDate
+{
+  margin-top:10%;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}

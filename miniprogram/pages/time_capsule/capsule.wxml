@@ -1,0 +1,31 @@
+<!--miniprogram/pages/time_capsule/capsule.wxml-->
+<view class="bg" style="opacity:{{0.65}}">
+	<navigator url="../time_capsule/writing/writing">
+	<!--点击写信按钮跳转到写信界面-->
+		<image class="pen-image" src='../../images/tabbar/xiexin.png'></image>
+		<text class="text1">写信</text>
+	</navigator>
+	
+	<!--以下是设定时间的界面，初始时隐藏不渲染，再写完信后，finishWriting为true是渲染以下界面，遮蔽上面的背景和写信按钮-->
+	<view wx:if="{{finishWriting}}" class="settingTime">
+		<view>
+		<!--函数getEmail获取input内输入的邮箱账号-->
+			<input type="text" bindchange="getEmail" placeholder="请输入您的电子信箱~" placeholder-class="placeholder-imput" style="border:0;border-radius:5px;width:100%;height:500rpx;padding: 10px;resize: none; text-align: center"></input>
+		</view>
+		<view class="pickerview">
+			<picker mode="date" start="{{createTime}}" end="2050-12-31" bindchange="bindDateChange">
+				<text class="placeholder-imput" style="">选择收信的日子吧</text>
+			</picker>
+			<!--设定picker，让用户选定时间，函数bindDateChange获取用户设定好的时间-->
+		</view>
+		<view class="emailDate">
+		<!--显示用户设定的日期-->
+			<text>收信日期：</text>
+			<text>{{date}}</text>
+		</view>
+		<image class="setting-image" src='../../images/timeCapsule/fasong.png' bindtap="settingAndSend">
+		</image>
+		<!--寄信按钮，用户点击后，settingAndSend函数会将用户填的信息，写的信件等存入数据库，并返回-->
+		<text class="text2">寄信</text>
+	</view>
+</view>
